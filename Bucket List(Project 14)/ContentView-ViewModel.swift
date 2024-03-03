@@ -14,7 +14,7 @@ extension ContentView{
      @Published private(set) var locations: [Location]
      @Published var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta:25, longitudeDelta:25))
      @Published var selectedPlace: Location?
-     @Published var unLocked = true
+     @Published var unLocked = false
      
      let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
      
